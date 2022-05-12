@@ -1,0 +1,14 @@
+# TpcBlockBurn represents a native TPC tokens burn record per created block.
+type TpcBlockBurn {
+    # blockNumber represents the number of the block.
+    blockNumber: Long!
+
+    # Timestamp is the unix timestamp at which this block was created.
+    timestamp: Long!
+
+    # amount represents the amount of TPC tokens burned in WEI units (18 digits fixed INT encoded as HEX number).
+    amount: BigInt!
+
+    # tpcValue represents TPC value of the burned TPC tokens.
+    tpcValue: Float!
+}
